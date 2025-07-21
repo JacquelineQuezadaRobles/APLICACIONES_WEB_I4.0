@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState } from 'react';
 import { Menu } from 'antd';
 import {
@@ -62,7 +60,7 @@ export default function MenuComponent() {
       const IconComponent = Icons[item.icon as keyof typeof Icons];
       return {
         key: item.path,
-        icon: IconComponent ? <IconComponent /> : null,
+        icon: IconComponent ? <IconComponent/> : null,
         label: item.title,
       };
     });
